@@ -10,6 +10,7 @@ if (!WALLET) { throw new Error("Missing env: WALLET") }
 export const FUNDER = process.env.FUNDER
 if (!FUNDER) { throw new Error("Missing env: FUNDER") }
 
+export const HYPERLIQUID_API_URL = process.env.HYPERLIQUID_API_URL ||  "https://api.hyperliquid.xyz"
 export const CLOB_API_URL = process.env.CLOB_API_URL || 'https://clob.polymarket.com'
 export const POLYGON_CHAIN_ID = 137
 export const AMOY_CHAIN_ID = 80002

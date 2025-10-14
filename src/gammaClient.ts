@@ -1,9 +1,9 @@
-import type { ListMarketsParams } from './types/gamma-api/listMarketsParams'
-import { ListMarketsResponse } from './types/gamma-api/listMarketsResponse';
+import type { ListMarketsParams } from './types/gamma-api/ListMarketsParams'
+import { ListMarketsResponse } from './types/gamma-api/ListMarketsResponse';
 import * as ENV from './env';
 
 export class GammaClient {
-  gamme_api_url = 'https://gamma-api.polymarket.com'
+  gamme_api_url = ENV.GAMMA_API_URL
 
   constructor() {}
 
