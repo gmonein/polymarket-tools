@@ -34,7 +34,7 @@ async function gammaRequest() {
       ascending: false,
     })
     const bitcoin_price_markets = markets.filter(e => e.description.includes('Bitcoin'))
-    console.log(bitcoin_price_markets.map(e => e.marketMakerAddress))
+    console.log(bitcoin_price_markets.map(e => e.question))
   }
 }
 

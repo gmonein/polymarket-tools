@@ -9,7 +9,8 @@
   "scripts": {
     "build": "rm -rf dist && tsc",
     "prepack": "pnpm run build",
-    "test": "pnpm build && node dist/main.js"
+    "test": "pnpm build && node dist/main.js",
+    "realtime": "pnpm build && node dist/realtime.js"
   },
   "files": [
     "dist"
@@ -19,6 +20,7 @@
   },
   "dependencies": {
     "@polymarket/clob-client": "^4.22.7",
+    "@polymarket/real-time-data-client": "^1.4.0",
     "dotenv": "^17.2.3",
     "ethers": "^6.15.0",
     "ts-node": "^10.9.2"
